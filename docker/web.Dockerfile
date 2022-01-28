@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm
+FROM richarvey/nginx-php-fpm:1.9.0
 ARG MIR_WWW_PATH
 ARG MIR_DOMAIN_NAME
 ARG MIR_SSL_ENABLED
