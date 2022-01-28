@@ -26,6 +26,19 @@ if($requestParams['requestPath'] == '/') {
  elseif($requestParams['requestPath'] == '/openapi-gateway-app/live/get_radios_by_ids') {
     // Radio list by ids
     include($global_path . 'include/api/get_radios_by_ids.php');
+}
+ elseif($requestParams['requestPath'] == '/live/radios') {
+    // Radio search request
+    include($global_path . 'include/api/radiosearch.php');
+}
+ elseif($requestParams['requestPath'] == '/search/radios') {
+    // Radio search request
+    include($global_path . 'include/api/radiosearch.php');
+}
+ elseif($requestParams['requestPath'] == '/live/get_radios_by_ids') {
+    // Radio list by ids
+    include($global_path . 'include/api/get_radios_by_ids.php');
+     
 } else {
     // Requests which we don't intercept 
     // Code moved to nginx virtual host config
